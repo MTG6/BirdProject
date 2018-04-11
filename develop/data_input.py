@@ -1,13 +1,16 @@
+import pandas as pd
+
 def read_data(sname):
 	"""Read in relevant data."""
 	
 	sname = sname.upper()
-	sname = 'OREGON'
+	print(sname)
+	#sname = 'OREGON'
 	
 	#Get state csv, split route into state blocks
-	region = pd.read_csv("../data/Oregon.csv")
-	routes = pd.read_csv("../data/routes_clean.csv",encoding = "ISO-8859-1")
-	routes_or = routes[routes.statenum == 69]
+	region = pd.read_csv(f'./data/{sname}.csv')
+	routes = pd.read_csv("./data/routes_clean.csv",encoding = "ISO-8859-1")
+	#routes_or = routes[routes.statenum == 69]
 		
 	#Make mappings
 	#bird_map = pd.DataFrame({"Aou":AOU,"names":bird_names})
@@ -30,7 +33,7 @@ def bird_mapping():
 	AOU = []
 	bird_names = []
 
-	with open("../data/SpeciesList.txt","r",encoding = "ISO-8859-1") as pipe:
+	with open("./data/SpeciesList.txt","r",encoding = "ISO-8859-1") as pipe:
 		data = pipe.readlines()
 		while i < end:
 			AOU.append(int(data[i][6:12]))
