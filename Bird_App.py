@@ -19,7 +19,8 @@ def stateSelect():
 	df = read_data(states)
 	top5 = top5_bird(df, year = 2010)
 	
-	return render_template("result.html", output2 = str(states+str(len(top5))))
+	#return render_template("result.html", output2 = top5.to_html())
+	return top5.to_html() 
 
 if __name__ == "__main__":
 	app.run(debug=True, host="0.0.0.0")
