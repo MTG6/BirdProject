@@ -15,6 +15,6 @@
 	* Compare states (start with 2)
 	
 * Create simple flask app to show outputs of functions
-	* Create form to allow users to choose state (start w/ subset)
+	* Create list if form has multiple selections
 	* Create results html page
 	* Build some basic visualizations (D3)

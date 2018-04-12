@@ -17,7 +17,10 @@ def index():
 	#return variables
 	return render_template("landing.html" , output1=res , output2=top5)
 
-
+@app.route('/stateSelect', methods=['POST'])
+def stateSelect():
+	states = request.form['States']
+	return states
 
 if __name__ == "__main__":
 	app.run(debug=True, host="0.0.0.0")

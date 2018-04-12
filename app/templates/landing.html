@@ -10,3 +10,64 @@ Hopefully there is a table below this:
 {{ output2 }}
 </p>
 </body>
+
+<h2>Select States to Investigate</h2>
+<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+<form action="{{ url_for('stateSelect') }}" method="post">
+  <select multiple id="stateform" name="States" size="4">
+		<option value="ALASKA">Alaska</option>
+		<option value="ALABAMA">Alabama</option>
+		<option value="ARKANSAS">Arkansas</option>
+		<option value="ARIZONA">Arizona</option>
+		<option value="CALIFORNIA">California</option>
+		<option value="COLORADO">Colorado</option>
+		<option value="CONNECTICUT">Connecticut</option>
+		<option value="DC">District of Columbia</option>
+		<option value="DELAWARE">Delaware</option>
+		<option value="FLORIDA">Florida</option>
+		<option value="GEORGIA">Georgia</option>
+		<option value="HAWAII">Hawaii</option>
+		<option value="IOWA">Iowa</option>
+		<option value="IDAHO">Idaho</option>
+		<option value="ILLINIOS">Illinois</option>
+		<option value="INDIANA">Indiana</option>
+		<option value="KANSAS">Kansas</option>
+		<option value="KENTUCKY">Kentucky</option>
+		<option value="LOUISIANA">Louisiana</option>
+		<option value="MASSACHUSETTS">Massachusetts</option>
+		<option value="MARYLAND">Maryland</option>
+		<option value="MAINE">Maine</option>
+		<option value="MICHIGAN">Michigan</option>
+		<option value="MINNESOTA">Minnesota</option>
+		<option value="MISSOURI">Missouri</option>
+		<option value="MISSISSIPPI">Mississippi</option>
+		<option value="MONTANA">Montana</option>
+		<option value="NORTH CAROLINA">North Carolina</option>
+		<option value="NORTH DAKOTA">North Dakota</option>
+		<option value="NEBRASKA">Nebraska</option>
+		<option value="NEW HAMPSHIRE">New Hampshire</option>
+		<option value="NEW JERSEY">New Jersey</option>
+		<option value="NEW MEXICO">New Mexico</option>
+		<option value="NEVADA">Nevada</option>
+		<option value="NEW YORK">New York</option>
+		<option value="OHIO">Ohio</option>
+		<option value="OKLAHOMA">Oklahoma</option>
+		<option value="OREGON">Oregon</option>
+		<option value="PENNSYLVANIA">Pennsylvania</option>
+		<option value="RHODE ISLAND">Rhode Island</option>
+		<option value="SOUTH CAROLINA">South Carolina</option>
+		<option value="SOUTH DAKOTA">South Dakota</option>
+		<option value="TENNESSEE">Tennessee</option>
+		<option value="TEXAS">Texas</option>
+		<option value="UTAH">Utah</option>
+		<option value="VIRGINIA">Virginia</option>
+		<option value="VERMONT">Vermont</option>
+		<option value="WASHINGTON">Washington</option>
+		<option value="WISCONSIN">Wisconsin</option>
+		<option value="WEST VIRGINIA">West Virginia</option>
+		<option value="WYOMING">Wyoming</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
