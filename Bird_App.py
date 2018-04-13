@@ -12,6 +12,7 @@ def index():
 	
 	#return variables
 	return render_template("landing.html" , output1=res)
+	#return render_template("b_index.html")
 
 @app.route('/stateSelect', methods=['POST'])
 def stateSelect():
