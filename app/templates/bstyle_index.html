@@ -47,7 +47,8 @@ var z = d3.scaleOrdinal()
 var tooltip = d3.select("body").append("div").attr("class", "toolTip");
 
 //Syncronous data loading (make this run after post)
-d3.csv("Birds.csv", function(d, i, columns) {
+
+d3.csv("./static/Birds.csv", function(d, i, columns) {
   for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
   return d;
 }, function(error, data) {
@@ -120,5 +121,6 @@ d3.csv("Birds.csv", function(d, i, columns) {
       .attr("dy", "0.32em")
       .text(function(d) { return d; });
 });
+
 
 </script>

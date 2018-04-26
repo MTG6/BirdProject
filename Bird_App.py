@@ -23,5 +23,13 @@ def stateSelect():
 	#return render_template("result.html", output2 = top5.to_html())
 	return top5.to_html() 
 
+#Attempt to synchronously load data
+@app.route('/viz')
+def show_viz():
+	show = 1
+	return render_template("bstyle_index.html") #, flag=show) #can push variables eventually
+	
+	
+
 if __name__ == "__main__":
 	app.run(debug=True, host="0.0.0.0")
