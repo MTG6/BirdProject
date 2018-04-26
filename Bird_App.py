@@ -12,7 +12,7 @@ def index():
 	
 	#return variables
 	return render_template("landing.html" , output1=res)
-	#return render_template("b_index.html")
+	
 
 @app.route('/stateSelect', methods=['POST'])
 def stateSelect():
@@ -27,7 +27,7 @@ def stateSelect():
 @app.route('/viz')
 def show_viz():
 	show = 1
-	return render_template("bstyle_index.html") #, flag=show) #can push variables eventually
+	return render_template("bstyle_index.html")  #can push variables eventually
 	
 	
 
