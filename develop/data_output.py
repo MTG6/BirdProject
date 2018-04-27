@@ -21,4 +21,4 @@ def viz_data(df,funnames = None, ystart = 1999, yend = 2009):
 
 	t1 = res.reset_index()#.pivot(columns = 'names', values = 'SpeciesTotal')
 	res1 = t1.set_index('Year').pivot(columns = 'names', values = 'SpeciesTotal').fillna(0)
-	res1.to_csv("../app/static/Birds.csv")
+	res1.to_csv("./app/static/Birds.csv")
